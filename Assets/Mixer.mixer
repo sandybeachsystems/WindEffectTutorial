@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mixer
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 0
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: 56ca010b3041349979d3cea90d05728d
+    name: WindSpeed
+  - guid: 35451e74080b44e93b1dc7d0e9fc0d85
+    name: DistantResonance
+  m_AudioMixerGroupViews:
+  - guids:
+    - 1de4b67c93b414031a58b40198c28367
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 1de4b67c93b414031a58b40198c28367
+  m_Children: []
+  m_Volume: 4b3f9b8d66d2a4f8db618cb1e9e5ef10
+  m_Pitch: fad8586283aa648b6a111c4578bf7e6d
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  - {fileID: 3764626185519384490}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: b8b6a718fe1f647b986aeb4100084e9e
+  m_EffectName: Attenuation
+  m_MixLevel: 15fe40ed97f6f4484a8413af62604498
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 7e181cac7e139485eb5765cf6a100840
+  m_FloatValues:
+    65e0dcb2f7c6844ef93a82ce60f35174: 0.213
+    8de26733026dc4f928b97f3738e4a817: 0.302
+    8011c04392d3e476bb6f237e3dea4fcb: 0.525
+    947e6eb32984f4113a05d69e5c1eef67: 0.227
+    35451e74080b44e93b1dc7d0e9fc0d85: 0
+    620cb3a472a304fb496fa6a8046f059b: 0.602
+    ddafada51cd99422fb52fc49cd3ea680: 0.386
+    c0a9acc726df8415fac3cefcca4f89a2: 0.876
+    502a7bf75b6de46a38fbe2a77b7a9db3: 0.5
+    152d334a3b53544af81ede077aaf0512: 0.375
+    56ca010b3041349979d3cea90d05728d: 0
+    4b3f9b8d66d2a4f8db618cb1e9e5ef10: -1.6
+    b1efc7bdbd3b24d2fb75310f45c371fd: 0.178
+    18335b1fc60be409b8686e23736b673e: 0.487
+    3632a75f915d34ff78a716caf0cd3610: 0.441
+    16651bff015a44c3aac25bb71658fa36: 0.797
+  m_TransitionOverrides: {}
+--- !u!244 &3764626185519384490
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6e5c351820ebe4a30b630658c241c9ae
+  m_EffectName: audioplugin_Wind4Unity3
+  m_MixLevel: f0b5c421ecb98484084ce183c3ce9d2d
+  m_Parameters:
+  - m_ParameterName: Master Gain
+    m_GUID: 3632a75f915d34ff78a716caf0cd3610
+  - m_ParameterName: Distant Gain
+    m_GUID: 502a7bf75b6de46a38fbe2a77b7a9db3
+  - m_ParameterName: Wind Speed
+    m_GUID: 56ca010b3041349979d3cea90d05728d
+  - m_ParameterName: dst Intensity
+    m_GUID: d0f028016abc9468fb1385adb322c823
+  - m_ParameterName: dst Resonance
+    m_GUID: 35451e74080b44e93b1dc7d0e9fc0d85
+  - m_ParameterName: Distant Pan
+    m_GUID: 49bc35260a96243898cc0e429141c953
+  - m_ParameterName: Whistle Gain
+    m_GUID: 18335b1fc60be409b8686e23736b673e
+  - m_ParameterName: Whistle Pan1
+    m_GUID: b1efc7bdbd3b24d2fb75310f45c371fd
+  - m_ParameterName: Whistle Pan2
+    m_GUID: 16651bff015a44c3aac25bb71658fa36
+  - m_ParameterName: Howl Gain
+    m_GUID: 947e6eb32984f4113a05d69e5c1eef67
+  - m_ParameterName: Howl Pan1
+    m_GUID: c0a9acc726df8415fac3cefcca4f89a2
+  - m_ParameterName: Howl Pan2
+    m_GUID: 65e0dcb2f7c6844ef93a82ce60f35174
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
